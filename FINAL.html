@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+</head>
+<body class="body1">
+    <video autoplay loop muted playsinline src="./videos/181533-866999835.mp4" class="bg_video"></video>
+    <div class="container" id="cartArea">
+    <div class="cart" id="cart"></div>
+    <div class="div2">
+            <h3 style="z-index: 2; position: absolute; top:30px ; left: 120px;" id="div">Added successfully</h3>
+    </div>
+    <div style=" display: flex; justify-content: end; text-align: center;">
+        <h3 class="h32" style="display: flex; z-index: 2; position: absolute; top:110px ; left: 70px; ">CHOOSE THE MODEL</h3>
+        <div class="div1">
+            <label for=""><input type="checkbox" name="option1" value="1"></label><div class="box">2000</div>
+            <label for=""><input type="checkbox" name="option2" value="2"></label><i class="fa fa-square-check" ></i><div class="box">2010</div>
+            <label for=""><input type="checkbox" name="option3" value="3"></label><i class="fa fa-square-check"></i></label><div class="box">2020</div>
+        </div>
+    </div>
+            <div class="div3" style="position: absolute; top:220px ; left: 0px;">
+                <h3 class="h32" style="position: absolute; top:0px ; left: 70px;">Choose Quantity</h3>
+            <div class="counter-container" style="position: absolute; top:50px ; left: 120px;">
+            <div class="counter-box" onclick="increment()">+</div>
+            <div class="counter-box number-box" id="number">1</div>
+            <div class="counter-box" onclick="decrement()">−</div>
+            </div>
+    <button onclick="startCart()" class="but" style="margin: 110px 230px 0 0;">Buy Now</button>
+    </div>
+    </div>
+    <div class="message" id="message">
+            <h4 class="h33">Product purchased successfully 💕 Your product will arrive within three days Thank you for your trust in us ❤️💕💕</h4> 
+            <a href="./hh.html"><button class="but" style="position: absolute; top: 50px; left: 240px;"><h4>Home Page</h4></button></a>
+    </div>
+    <script>
+        function startCart() {
+            const cart = document.getElementById('cart');
+            const area = document.getElementById('cartArea');
+            const message = document.getElementById('message');
+            const areaWidth = area.offsetWidth;
+            cart.style.left = areaWidth + 'px';
+            setTimeout(() => {
+            message.style.display = 'block';
+            }, 2000); 
+            }
+            let count = 1;
+                function increment() {
+                count++;
+                document.getElementById("number").textContent = count;
+                }
+                function decrement() {
+                if (count > 1) {
+                count--;
+                document.getElementById("number").textContent = count;
+                }
+                }
+    </script>
+</body>
+</html>
