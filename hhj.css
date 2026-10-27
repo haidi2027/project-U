@@ -6,6 +6,10 @@
 body{
     background-color: rgb(41, 36, 36);
 }
+a:active{
+  color: rgba(253, 254, 254, 0);
+  text-decoration: none;
+}
 .Dnav{
   position: fixed;
   top: 0px;
