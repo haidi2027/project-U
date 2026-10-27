@@ -6,10 +6,6 @@
 body{
     background-color: rgb(41, 36, 36);
 }
-.but>.homeh2{
-  color: rgba(253, 254, 254, 0);
-  text-decoration: none;
-}
 .Dnav{
   position: fixed;
   top: 0px;
@@ -70,10 +66,10 @@ nav{
   color:rgb(255, 255, 255);
   
 }
-.but:active{
+.butt:active{
   text-decoration: none;
 }
-.but{
+.butt{
   text-decoration: none;
 }
 .home{
