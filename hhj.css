@@ -68,6 +68,12 @@ nav{
   font-weight: 600;
   font-style: normal;
   color:rgb(255, 255, 255);
+  
+}
+.but:active{
+  text-decoration: none;
+}
+.but{
   text-decoration: none;
 }
 .home{
